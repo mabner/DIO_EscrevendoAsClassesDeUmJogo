@@ -51,8 +51,8 @@ class Heroi:
             "ninja": "shuriken",
         }
         ataque = ataques.get(self.tipo, "usou um ataque desconhecido")
-        
-        print(f"O {self.tipo} {self.nome} atacou usando {ataque}")
+
+        print(f"O {self.tipo} atacou usando {ataque}")
 
 
 if __name__ == "__main__":
