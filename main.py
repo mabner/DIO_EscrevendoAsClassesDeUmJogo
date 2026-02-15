@@ -35,3 +35,20 @@ Ao final deve se exibir uma mensagem:
   ex: mago atacou usando magia
   guerreiro atacou usando espada
 """
+
+
+class Heroi:
+    def __init__(self, nome, idade, tipo):
+        self.nome = nome
+        self.idade = idade
+        self.tipo = tipo
+
+    def atacar(self):
+        ataques = {
+            "mago": "magia",
+            "guerreiro": "espada",
+            "monge": "artes marciais",
+            "ninja": "shuriken",
+        }
+        ataque = ataques.get(self.tipo, "usou um ataque desconhecido")
+        print(f"o {self.tipo} atacou usando {ataque}")
