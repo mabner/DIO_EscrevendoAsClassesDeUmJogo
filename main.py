@@ -52,3 +52,15 @@ class Heroi:
         }
         ataque = ataques.get(self.tipo, "usou um ataque desconhecido")
         print(f"o {self.tipo} atacou usando {ataque}")
+
+
+if __name__ == "__main__":
+    herois = [
+        Heroi("Bartyra", 47, "mago"),
+        Heroi("Robervaldo", 43, "guerreiro"),
+        Heroi("Aleera", 27, "monge"),
+        Heroi("Salith", 32, "ninja"),
+    ]
+
+    for heroi in herois:
+        heroi.atacar()
